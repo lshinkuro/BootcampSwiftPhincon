@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='HelloWorld'/>
+        <page name='Variable'/>
+        <page name='Optionals'/>
+        <page name='GuardLet'/>
+        <page name='BasicOperator'/>
+        <page name='ForLoops'/>
+        <page name='LogicalOperator'/>
+    </pages>
+</playground>
