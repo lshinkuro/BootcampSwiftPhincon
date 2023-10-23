@@ -4,7 +4,7 @@ import Foundation
 
 /*Anda menggunakan opsional dalam situasi di mana suatu nilai mungkin tidak ada. Opsional mewakili dua kemungkinan: Terdapat nilai dari tipe tertentu, dan Anda dapat membuka opsi untuk mengakses nilai tersebut, atau tidak ada nilai sama sekali*/
 
-let possibleNumber = "123"
+let possibleNumber = "123K"
 let convertedNumber = Int(possibleNumber)
 
 print(convertedNumber)
@@ -28,7 +28,7 @@ if let actualNumber = Int(possibleNumber) {
 
 // bisa juga di gunakan untuk banyak kondisi seperti ini
 
-if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+if let firstNumber = Int("4"), let secondNumber = Int("142"), firstNumber < secondNumber && secondNumber < 100 {
     print("\(firstNumber) < \(secondNumber) < 100")
 }
 //: [Next](@next)

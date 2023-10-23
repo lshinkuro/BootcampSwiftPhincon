@@ -5,8 +5,12 @@
         <page name='Variable'/>
         <page name='Optionals'/>
         <page name='GuardLet'/>
+        <page name='Condition'/>
         <page name='BasicOperator'/>
-        <page name='ForLoops'/>
+        <page name='SwitchCase'/>
         <page name='LogicalOperator'/>
+        <page name='ForLoops'/>
+        <page name='Struct'/>
+        <page name='Closure'/>
     </pages>
 </playground>

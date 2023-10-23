@@ -44,7 +44,7 @@ let cat = "🐱"; print(cat)
 // penggunaan type alias
 
 typealias AudioSample = UInt16
-var maxAmplitudeFound = AudioSample.min
+var maxAmplitudeFound = UInt16.min
 
 // pnggunaan boolean variable
 
@@ -61,10 +61,18 @@ if turnipsAreDelicious {
 
 /*Tupel mengelompokkan beberapa nilai menjadi satu nilai gabungan. Nilai-nilai dalam tuple bisa bertipe apa saja dan tidak harus bertipe sama satu sama lain.*/
 
-let http404Error = (404, "Not Found")
+var http404Error: (Int, String, Double) = (404, "Not Found", 5.3)
 
-let (statusCode, statusMessage) = http404Error
+http404Error.0 = 405
 
-print("The status code is \(statusCode)")
+var (statusCode, statusMessage, doubleNumber ) = http404Error
+
+print("The status code is \(http404Error.0)")
 print("The status message is \(statusMessage)")
+
+// array string
+
+var kelompokHewan: [String] = ["Sapi", "Babi", "Kerbau", "Ayam"]
+
+print(kelompokHewan[0])
 //: [Next](@next)

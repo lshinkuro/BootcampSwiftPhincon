@@ -20,7 +20,6 @@ for name in names[2...] {
 // Brian
 // Jack
 
-
 for name in names[...2] {
     print(name)
 }

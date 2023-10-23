@@ -10,12 +10,13 @@ let possibleNumber = "123"
 //print(number)
 
 
-func checkGuardLet() {
+
+func checkNumber() {
     guard let number = Int(possibleNumber) else {
         fatalError("The number was invalid")
     }
     print(number)
 }
 
-checkGuardLet()
+checkNumber()
 //: [Next](@next)
