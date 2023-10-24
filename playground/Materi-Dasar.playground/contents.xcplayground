@@ -10,7 +10,11 @@
         <page name='SwitchCase'/>
         <page name='LogicalOperator'/>
         <page name='ForLoops'/>
-        <page name='Struct'/>
         <page name='Closure'/>
+        <page name='TrailingClosure'/>
+        <page name='Function'/>
+        <page name='Class'/>
+        <page name='Struct'/>
+        <page name='ThrowError'/>
     </pages>
 </playground>

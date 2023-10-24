@@ -7,22 +7,26 @@ import Foundation
 
 
 
-func greet(person: String, greeting: (String) -> String) {
+func greet(person: String, greeting: (String) -> String ) -> String {
     let message = greeting(person)
     print(message)
+    return message
 }
 
 func simpleGreeting(name: String) -> String {
-    return "Hello, \(name)!"
+    return "Hello, agus!"
 }
 
 // memasukan function kedalam parameter function
 greet(person: "Alice", greeting: simpleGreeting)
 
 // atau bisa di masukan setelah fungsi nama lainya adalah trailing closure
-greet(person: "kholis") { name in
-    return  "Hello, \(name)!"
-}
+greet(person: "kholis", greeting: { name in
+    return  "Hello, Agus!"
+})
+
+let data = greet(person: "agus") { $0 }
+print(data)
 
 
 // fungsi yang mereturn fungsi lagi
@@ -48,4 +52,20 @@ let addClosure: SumTwoInt = { (a, b) in
 // Use the closure
 let result = addClosure(3, 5) // result is now 8
 print(result)
+
+
+var area: String = ""
+
+var nama: String {
+    get {
+        return "Hello World \(area)"
+    }
+    set {
+      area = newValue
+    }
+}
+
+print(nama)
+nama = "andre"
+print(nama)
 //: [Next](@next)

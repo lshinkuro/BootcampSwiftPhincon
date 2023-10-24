@@ -8,14 +8,18 @@ for index in 1...5 {
 }
 
 // pengulanagab pada array
-let names = ["Anna", "Alex", "Brian", "Jack"]
-for i in 0..<names.count {
+let names: [String] = ["Anna", "Alex", "Brian", "Jack"]
+for i in 2..<names.count {
     print("Person \(i + 1) is called \(names[i])")
 }
 
 // bisa juga dengan menggunakan spesifik index yang kita mau atau disebut One-Sided Ranges
 for name in names[2...] {
-    print(name)
+    if name == "Brian" {
+        print(name + "Gokil")
+    } else {
+        print(name)
+    }
 }
 // Brian
 // Jack

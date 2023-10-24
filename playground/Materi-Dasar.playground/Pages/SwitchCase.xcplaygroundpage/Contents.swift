@@ -25,6 +25,4 @@ print(Days.allCases.count)
 for direction in Days.allCases {
     print(direction.description())
 }
-
-
 //: [Next](@next)
